@@ -1,7 +1,10 @@
 # WINGS BANK - PROJETO PRÁTICO DE PROGRAMAÇÃO
 
+
 Descrição do Projeto
+
 O projeto WingsBank é um site fictício de um banco digital inovador, projetado para fornecer uma experiência financeira moderna e eficiente aos usuários. Desenvolvido em HTML, CSS e JavaScript, o site apresenta uma interface intuitiva e atraente, refletindo os valores e os serviços oferecidos pelo Wings Bank.
+
 
 Estrutura do Projeto
 O código-fonte do projeto está organizado em diversos arquivos, cada um responsável por uma parte específica da página. Aqui está uma breve descrição de cada seção:
@@ -12,8 +15,11 @@ CSS: O estilo da página é definido no arquivo theme.css, garantindo uma aparê
 
 JavaScript: O arquivo script.js contém scripts interativos para o funcionamento do menu dropdown, validação do CPF e manipulação da experiência do usuário.
 
+
 Funcionalidades Principais
+
 Menu de Navegação
+
 O site apresenta um menu de navegação intuitivo, dividido em categorias como "Para você", "Para sua empresa", "Produtos e Serviços" e "Atendimento". O menu é interativo, exibindo subcategorias ao passar o mouse sobre as opções.
 
 Carrossel de Informações
