@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    <title>WingsBank</title>
+</head>
+
+<body
+    style="margin: 0%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <div class="topnav">
+        <div class="logo">
+            <img src="wings.png" />
+        </div>
+        <ul>
+            <li class="hovbar dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Para você</a>
+                <div class="dropdown-content">
+                    <h3>
+                        <div class="row">
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Wings Bank</h6>
+                                </div>
+                                <a href="#">Conta do Wings Bank</a>
+                                <a href="#">Cartão de crédito</a>
+                                <a href="#">Tudo Sobre Pix</a>
+                                <a href="#">Cartão de crédito</a>
+                            </div>
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Wings Bank Seguros</h6>
+                                </div>
+                                <a href="#">Seguro de Vida</a>
+                                <a href="#">Seguro de Celular</a>
+                            </div>
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Outros</h6>
+                                </div>
+                                <a href="#">Empréstimos</a>
+                                <a href="#">Investimentos</a>
+                                <a href="#">Cash Back</a>
+                            </div>
+                    </h3>
+                </div>
+            </li>
+            <li class="hovbar dropdown">
+                <a href="javascript:void(0)" class="dropbtn"> Para sua empresa</a>
+                <div class="dropdown-content">
+                    <h3>
+                        <div class="row">
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Conta PJ</h6>
+                                </div>
+                                <a href="#">Cartão de crédito PJ</a>
+                                <a href="#">Pagamentos</a>
+                                <a href="#">Compartilhe o acesso da conta PJ</a>
+                            </div>
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Rapidez no Acesso</h6>
+                                </div>
+                                <a href="#">Aplicativo Wings Bank</a>
+                            </div>
+                    </h3>
+                </div>
+            </li>
+            <li class="hovbar dropdown">
+                <a href="javascript:void(0)" class="dropbtn"> Produtos e Serviços</a>
+                <div class="dropdown-content">
+                    <h3>
+                        <div class="row">
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Sobre nós</h6>
+                                </div>
+                                <a href="#">Sobre o Wings Bank</a>
+                                <a href="#">Carreiras</a>
+                                <a href="#">Investidores</a>
+                                <a href="#">Segurança</a>
+                            </div>
+                            <div class="column">
+                                <div class="texto">
+                                    <h6>Comunidade</h6>
+                                </div>
+                                <a href="#">Invista conosco</a>
+                                <a href="#">Open Finance</a>
+                                <a href="#">Wings Bank Internacional</a>
+                            </div>
+                    </h3>
+                </div>
+            </li>
+            <li class="hovbar dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Atendimento</a>
+                </h3>
+    </div>
+    </li>
+    </ul>
+    </div>
+
+    <script>
+        const dropdownItems = document.querySelectorAll('.dropdown');
+
+        dropdownItems.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                closeAllDropdowns();
+                openDropdown(item.querySelector('.dropdown-content'));
+            });
+
+            item.addEventListener('mouseleave', () => {
+                closeAllDropdowns();
+            });
+        });
+
+        function closeAllDropdowns() {
+            const dropdownContents = document.querySelectorAll('.dropdown-content');
+            dropdownContents.forEach(content => {
+                content.style.display = 'none';
+            });
+        }
+
+        function openDropdown(dropdownContent) {
+            dropdownContent.style.display = 'block';
+        }
+    </script>
+
+    <div class="div1">
+
+        <div class="first-container">
+            <img src="image1.png" class="background_image">
+
+            <div class="inputCard">
+                <h3 class="inputCard-h3">Com o WingsBank a<br>resposta vem em menos de 1 minuto.</h3>
+
+
+                <input class="cpf-input" name="cpf" type="text" id="field-cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                    aria-describedby="erro-cpf" placeholder="Digite seu CPF..." maxlength="11" />
+                <button class="button-continue" onclick="inputCallBack()">Continuar</button>
+
+            </div>
+        </div>
+
+        <div class="second-container">
+
+            <h1 class="card-h1" style="text-align: center; font-size: 48px;">Uma conta do WingsBank, várias vantagens
+                para <br>você.<br><br>
+            </h1>
+            <div class="container">
+                <div class="slick">
+                    <div class="slick1">
+                        <h3 class="title"><b>Cartão de crédito</b><br><br>
+                            <p class="title1">Um cartão completo, moderno e gratuito pra você. E com anuidade zero.
+                                Fique no controle da sua vida financeira.</p>
+                            <br< /h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Pix no crédito</b><br><br>
+                            <p class="title1">Faça um Pix e pague com o cartão de crédito: não use o saldo da sua conta
+                                e concentre os gastos no cartão.</p>
+                            <br< /h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Empréstimo</b><br><br>
+                            <p class="title1">Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam
+                                você no controle do início ao fim.</p>
+                            <br< /h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Consignado</b><br><br>
+                            <p class="title1">O empréstimo consignado para servidores públicos federais, para
+                                aposentados e pensionistas.</p>
+                            <br< /h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Conta</b><br><br>
+                            <p class="title1">Receba, movimente e guarde seu dinheiro de um jeito simples e com
+                                rendimento maior que a poupança.</p>
+                            <br< /h3>
+                        </h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Investimentos</b><br><br>
+                            <p class="title1">Investimentos a partir de R$ 1 e opções para todos os perfis. Uma
+                                experiência fácil, segura e transparente.</p>
+                            <br< /h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Boleto no crédito</b><br><br>
+                            <p class="title1">Pague ou parcele em até 12 vezes seus boletos com o cartão de crédito e
+                                tenha mais controle sobre o seu dinheiro.<br< /p>
+                        </h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Cartão Virtual</b><br><br>
+                            <p class="title1">Crie novos cartões virtuais de crédito ou débito no seu app e proteja
+                                ainda mais suas compras online.<br< /p>
+                        </h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Carteira Digital</b><br><br>
+                            <p class="title1">Armazene os dados do seu cartão de crédito nas carteiras digitais do
+                                Google Pay, Apple Pay e Samsung Pay.<br< /p>
+                        </h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Seguro de vida</b><br><br>
+                            <p class="title1">Proteja você e quem você ama por a partir de R$4 por mês. Escolha o plano
+                                que se encaixa ao seu perfil.<br< /p>
+                        </h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Cartão Adicional</b><br><br>
+                            <p class="title1">Cartão de crédito físico adicional para ser compartilhado com outra pessoa
+                                utilizando o mesmo limite.<br< /p>
+                        </h3>
+                    </div>
+                    <div class="slick1">
+                        <h3 class="title"><b>Poupança</b><br><br>
+                            <p class="title1">Organize e guarde dinheiro para seus planos. Crie Poupanças personalizadas
+                                para cada um de seus objetivos.<br< /p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="slick/slick.min.js"></script>
+
+            <script type="text/javascript">
+                $('.slick').slick({
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            </script>
+
+            <div>
+                <div class="cartao0">
+                    <div class="stage">
+                        <div class="box">
+                            <img src="cartao.png" alt="Cartão" class="animated-image">
+                        </div>
+                    </div>
+
+                    <div class="cartao1" style="margin-top: -135px;margin-left: 180px;padding: 288px;">
+                        <h1>
+                            Cartão Internacional Wings Bank Mastercard®
+                        </h1>
+                        <p class="p1">Facilidade e segurança para você em mais de 30 milhões de estabelecimentos,<br>
+                            além dos <a class="link" href="#" target="_blank" rel="noopener">benefícios Mastercard.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <h1 class="card-h1" style="text-align: center; font-size: 48px;">Muito mais com seu cartão de
+                    crédito.<br><br>
+                </h1>
+                <div class="of">
+                    <div class="cartao2"
+                        style="margin-left: 101px;margin-top: 11px;padding: 85px;margin-bottom: -462px;">
+                        <img class="card-image" src="img17.jpg" style="width: 703px; height: auto;">
+
+                        <div class="cartao3" style="margin-top: -459px;margin-left: 846px;">
+                            <h1><br>
+                                Cartão Virtual Wings Bank
+                            </h1>
+                            <br>
+                            <p class="p1">O cartão virtual do Wings Bank possui número e código de segurança diferentes
+                                do cartão físico, e pode ser usado em compras online e com carteiras digitais para
+                                aumentar a segurança das operações.</p>
+                            <a class="saiba-mais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp;
+                                &#8594;</a>
+                            <div class="cartao4"
+                                style="margin-left: -930px;margin-top: 169px;margin-bottom: 500px;padding: 85px;">
+                                <img class="card-image" src="card1.jpg" style="width: 703px; height: auto;">
+
+                                <div class="cartao5" style="margin-top: -351px;margin-left: 846px;">
+                                    <h1>
+                                        E tudo isso sem custo!
+                                    </h1>
+                                    <br>
+                                    <p class="p1">Burocracia custa dinheiro. Então somos eficientes para você não ter
+                                        que pagar nada.</p>
+                                    <a class="saiba-mais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba
+                                        mais&nbsp; &#8594;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bene">
+            <h2 class="bene1">Benefícios:</h2>
+        </div>
+        <div class="div3">
+            <div class="cards">
+                <img class="card-image1" src="img2.jpg">
+                <h3 class="inputCard2-h3" style="text-transform: uppercase;"><span style="color: #386992;">Conta
+                        corrente sem tarifa e<br> anuidade</h3></span>
+                <p style="box-sizing: border-box; font-size: 16px;">Conta corrente completa, cartão de crédito<br> sem
+                    anuidade, uma plataforma ideal para investir.</p>
+            </div>
+
+            <div class="cards">
+                <img class="card-image1" src="img3.jpg">
+                <h3 class="inputCard2-h3" style="text-transform: uppercase;"><span style="color: #386992;">Para guardar
+                        dinheiro<br> na conta e deixar render</h3></span>
+                <p style="box-sizing: border-box; font-size: 16px;">Dinheiro disponível ou resgate planejado: você
+                    escolhe<br> como guardar suas reservas.</p>
+            </div>
+
+            <div class="cards">
+                <img class="card-image1" src="img4.jpg">
+                <h3 class="inputCard2-h3" style="text-transform: uppercase;"><span style="color: #386992;">Saques em
+                        caixas eletrônicos<br> de todo Brasil </h3></span>
+                <p style="box-sizing: border-box; font-size: 16px;">Saques em Banco 24horas e rede Saque e Pague.<br>
+                    Dinheiro na mão sempre que precisar.</p>
+            </div>
+        </div>
+        <div class="titulo" style="text-align: center;">
+
+            <h1 class="card-h1" style="text-align: center; font-size: 48px;"><span
+                    style="color: #386992;">Soluções</span> para tornar o seu dia a dia muito mais fácil!
+            </h1>
+        </div>
+        <div class="pix1">
+            <img class="pix-image" src="img17.png" style="width: 680px;height: auto;">
+
+            <div class="pix0">
+                <div class="pix0">
+                    <h1>
+                        Envie e receba<br> pagamentos<br> em segundos. <br>Rápido.<br><br>
+                    </h1>
+                    <h4 class="pix2"><span style="font-weight: 400;">Use o Pix para fazer pagamentos e transferências
+                            instantâneas a qualquer hora. Sem burocracia e sem custo, do jeito Wings Bank.</span></h4>
+                    <a class="saibamais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp;
+                        &#8594;</a>
+                </div>
+            </div>
+
+            <img class="pix-image" src="img18.png" style="width: 680px;height: auto; margin-top: 169px;">
+
+            <div class="pix0">
+                <div class="pix0">
+                    <h1>
+                        Sem tarifas escondidas,<br>tudo transparente.<br><br>
+                    </h1>
+                    <h4 class="pix2"><span style="font-weight: 400;">Com a conta Wings Bank você economiza
+                            aproximadamente R$ 370 por ano, se livra das filas das agências e também das tarifas de
+                            manutenção. É tudo de forma digital!</span></h4>
+                    <a class="saibamais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp;
+                        &#8594;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="of1">
+                <div class="of3">
+                    <h1>Conquiste sua liberdade financeira!</h1>
+                    <p class="p1">Conta, Cartão de Crédito e diversas soluções para te ajudar em todos os momentos da
+                        sua vida.</p>
+                    <a class="saibamais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp;
+                        &#8594;</a>
+                </div>
+                <div class="of2">
+                    <img class="card-image" src="img10.jpg" style="width: 880px; height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <h1>Verifique as ofertas para a sua Empresa:<br>
+                Quanto mais usar, maiores os benefícios para o seu negócio!
+            </h1>
+        </div>
+</body>
+<div>
+    <div class="div4" style="padding: 40px;">
+        <img class="card-image" src="img5.jpg" style="width: 703px; height: 480px;">
+
+        <div class="div5" style="margin-top: -170px; padding: 150px;">
+            <h1>
+                Quais as vantagens da conta PJ do Wings Bank?
+            </h1>
+            <p class="p1">Tenha um cartão de débito e crédito PJ personalizado com o nome da sua empresa (sujeito a<br>
+                análise e aprovação).</p>
+
+            <p class="p1">Faça suas vendas e receba na hora com o Wings Pay.</p>
+
+            <p class="p1">Organize suas contas com o Assistente de Pagamentos WingsBank.</p>
+
+            <p class="p1">Use o mesmo app para sua conta pessoal e sua conta PJ.</p>
+
+            <p class="p1">Guarde o dinheiro do seu negócio de maneira organizada nas Caixinhas PJ personalizadas de
+                acordo<br> com os objetivos do seu negócio.</p>
+
+            <p class="p1">Compartilhe o acesso da conta PJ com outros sócios ou colaboradores que tenham a conta pessoal
+                do Wings Bank.</p>
+            <a class="saibamais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp; &#8594;</a>
+
+            <div class="div6" style="margin-left: -930px;margin-top: 93px;padding: 85px;margin-bottom: -160px;">
+                <img class="card-image" src="img14.jpg" style="width: 703px; height: 480px;">
+
+                <div class="div7" style="margin-top: -500px;margin-left: 846px;">
+                    <h1>
+                        Cobre seus clientes com os meios de pagamento da Conta PJ e centralize suas vendas no app.
+                    </h1>
+                    <p class="p1">Com nossas soluções de pagamento, você pode cobrar de seus clientes de onde estiver,
+                        com taxas competitivas e acesso rápido ao seu dinheiro, com uma experiência segura e fácil para
+                        cobrar e gerenciar seus recebíveis. Você ainda pode receber todas suas vendas direto pelo app,
+                        cadastrando a conta PJ do Wings Bank como domicílio bancário.</p>
+                    <br>
+                    <b>
+                        <p>— Pix gratuito e ilimitado</p>
+                        <p>— Boleto de cobrança</p>
+                        <p>— Wings Pay (para receber no crédito de clientes Wings Bank)</p>
+                        <p>— Link de pagamento (para vender no cartão de crédito ou Pix)</p>
+                        <p>— Wings Click (que transforma seu celular em maquininha)</p>
+                        <p>— Minhas Vendas: um hub de cobranças para você acompanhar todas as suas vendas</p>
+                    </b>
+                    <a class="saibamais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp;
+                        &#8594;</a>
+
+                    <div class="div8" style="margin-left: -930px;margin-top: 93px;padding: 85px;">
+                        <img class="card-image" src="img12.jpg" style="width: 703px; height: 480px;">
+
+                        <div class="div9" style="margin-top: -446px;margin-left: 846px;">
+                            <h1>
+                                Organize e automatize o pagamento das contas e do imposto da sua empresa.
+                            </h1>
+                            <br>
+                            <p class="p1">Você pode usar o buscador de boletos para gerenciar todas as contas emitidas
+                                no seu CNPJ, além de programar Pix recorrente e colocar suas contas no débito
+                                automático, incluindo sua fatura do cartão de crédito PJ. Já com a Central de Impostos
+                                MEI, você pode emitir e pagar sua guia DAS MEI em poucos cliques direto pelo app. É mais
+                                autonomia e facilidade pro seu dia a dia!</p>
+                            <a class="saibamais" href="#" style="margin-top: 30px; font-size: 20px;">Saiba mais&nbsp;
+                                &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+
+<script>
+    //função e variavel para calculo de valor.txt
+    let _accountCurrency = 0.0;
+    function calSpent(spent) {
+        if (_accountCurrency >= spent && spent !== 0.0) {
+            _accountCurrency -= spent;
+            // variavel responsavel pela formatação do valor para moeda Real.
+            const accountCurrency = _accountCurrency.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            return accountCurrency;
+        }
+    }
+    // valor gasto é passado como argumento da função.
+</script>
+
+<script type="text/javascript">
+
+    function inputCallBack() {
+        const cpfInput = document.getElementById("field-cpf").value;
+        const button = document.getElementById("button-continue")
+        if (validateCpf(cpfInput) == true) {
+            location.href = "create-account.html";
+        } else {
+            document.getElementById("demo").innerHTML = "Errado!";
+        }
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    function validateCpf(cpf) {
+        const cpfRegex = /^(?!.{9}(.)\1).{11}$/;
+        const lastDigit = parseInt(cpf.charAt(cpf.length - 1));
+        const secondToLastDigit = cpf.charAt(9);
+        let count = cpf.length;
+        const calTimes = (digit, countL) => digit * countL;
+        let sum = 0;
+        for (let i = 0; i < cpf.length; i++) {
+            if (count > 2) {
+                count--;
+                sum += calTimes(parseInt(cpf.charAt(i)), count);
+            }
+        }
+        let digit1Result = 11 - (sum % 11);
+        if (digit1Result > 9) {
+            digit1Result = 0;
+        }
+        count = cpf.length;
+        sum = 0;
+        const newCPF = cpf.replace(cpf.substring(9, 11), digit1Result.toString());
+        for (let a = 0; a < newCPF.length; a++) {
+            if (count >= 2) {
+                sum += calTimes(parseInt(newCPF.charAt(a)), count);
+                count--;
+            }
+        }
+        let digit2Result = 11 - (sum % 11);
+        if (digit2Result > 9) {
+            digit2Result = 0;
+        }
+        const result = (digit1, digit2) => digit1 === parseInt(secondToLastDigit) && digit2 === lastDigit && cpfRegex.test(cpf);
+        return result(digit1Result, digit2Result);
+    }
+</script>
+
+<head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="container1 row">
+            <div class="footer-col">
+                <h4>Produtos e Serviços</h4>
+                <ul class="footer-ul">
+                    <li><a href="#">Conta corrente</a></li>
+                    <li><a href="#">Cartões de crédito</a></li>
+                    <li><a href="#">Seguros</a></li>
+                    <li><a href="#">Crédito e Financiamentos</a></li>
+                    <li><a href="#">Investimentos</a></li>
+                    <li><a href="#">Tarifas e pacotes de serviços</a></li>
+                    <li><a href="#">Para sua Empresa</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sobre o Wings Bank</h4>
+                <ul class="footer-ul">
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Educação Financeira</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Relações com Investidores</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Análises Econômicas</a></li>
+                    <li><a href="#">Definições de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Fale com a gente</h4>
+                <ul class="footer-ul">
+                    <li><a href="#">Central de Atendimento</a></li>
+                    <li><a href="#">Central de Renegociação</a></li>
+                    <li><a href="#">S.A.C</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                    <li><a href="#">Horários de Atendimento</a></li>
+                    <li><a href="#">Telefones</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Ética – Canal de denúncia</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top"></div>
+
+        <div class="legal__info">
+            <p class="pwings">© 2023 Wings Bank (Brasil) S.A., CNPJ: 00.000.000/0000-00<br>Rua Fictícia Silva, 000 - São
+                Paulo, SP - 00000-000</p>
+        </div>
+
+        <div class="legal__links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Segurança</a>
+            <a href="#">LGPD</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

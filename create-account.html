@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="create-account-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta</title>
+</head>
+
+<body 
+style="margin: 0%; font-family: 'Gilroy', sans-serif;">
+<div class="div1">
+<div class="div4">
+    <h1 class="wingsbankh1" >Peça sua conta e cartão de crédito do WingsBank</h1>
+    <br><h3 class="wingsbankh3">A conta que te dá liberdade financeira.<br>
+        Suas compras do dia a dia estão sempre no seu controle. <br>
+        Fácil, seguro e transparente.</h3>
+    <img src="img16.jpe" class="background_image">
+
+
+</div>
+
+<div style="flex-direction: column; display: flex; width: 100%;">
+    <p class="p1">1 - Insira seus dados</p>
+<hr>
+<div class="div2">
+
+    <input class="input"  name="name" type="text" id="field-name"   placeholder=" Nome Completo" minlength="2"
+    oninput="this.value = this.value.replace(/[^a-z. A-Z.]/g, '').replace(/(\..*?)\..*/g, '$1');" 
+    />
+            <input class="input"  name="phone" 
+            type="text" id="field-phone"  
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" 
+            aria-describedby="erro-cpf" placeholder=" Celular" maxlength="11"/>
+
+            <input class="input"  name="email" type="text" id="field-email"  
+            placeholder=" E-mail" minlength="11"/>
+            
+            <input class="input"  name="confirm-email" 
+            type="text" id="field-confirm-email"  placeholder=" Confrimar E-mail" minlength="11"/> 
+</div>
+<button class="button-continue" onclick="inputCallBack()">Continuar</button>
+<p class="p2">2 - Escolha a melhor opção para você</p>
+<hr>
+<div class="div3">
+
+<label class="option">
+    
+    <h1>Opção:</h1><br>
+    <input class="input-options" id="input-option1" name="input-option" type="radio" class="sc-jRsXiD kCIIAh" value="MULTI_PRODUCT">
+    <span>
+        <p class="sc-ksNGjt jLlvSa">Cartão de Crédito + Conta</p>
+    </span>
+
+</label>
+
+<label class="option">
+    <h1>Opção:</h1><br>
+    <input class="input-options" id="input-option2" name="input-option" type="radio" class="sc-jRsXiD kCIIAh" value="MULTI_PRODUCT">
+    <span>
+        <p class="sc-ksNGjt jLlvSa">Cartão de Crédito + Conta Empreendedor</p>
+    </span>
+</label>
+
+
+<label class="option">
+    <h1>Opção:</h1><br>
+    <input class="input-options" id="input-option3" name="input-option" type="radio" class="sc-jRsXiD kCIIAh" value="MULTI_PRODUCT">
+    <span>
+        <p class="sc-ksNGjt jLlvSa">Conta PJ + Controle</p>
+    </span>
+
+</label>
+</div>
+<hr>
+
+<div style="grid-column: 1/ span 5; margin-top: 8%;" >
+    <label style="display: block;position: relative;line-height: 1.5;padding-left: 32px;">
+<input aria-required="true" aria-invalid="false" required type="checkbox"  >
+
+<span>Eu li, estou ciente das condições de tratamento dos meus dados pessoais e dou meu consentimento, quando aplicável,<br> conforme descrito nesta </span>
+<a class="link" href="#terms-of-privacy" style="color:#0084ff;"> Política de Privacidade</a>
+</label>
+<button type="submit" class="button-send"style=" position: absolute; float: inline-end;right: 50px;" disabled>Enviar</button>
+</div>
+</div>
+</div>
+
+</body>
